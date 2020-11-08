@@ -28,6 +28,7 @@ public class LowestNumber {
         System.out.println("Data is reading from the Table (tbl_primenumber) and displaying to the console");
         for (String st : lowestValue) {
             System.out.println(st);
+
         }
     }
 
