@@ -1,33 +1,109 @@
 Please answer the below Data Structure Questions:
 
 why do we need data structure?
-Ans :
+Ans : Java programmers use data structures to store and organize data,
+and we use algorithms to manipulate the data in those structures.
 
 What are the various operations that can be performed on different Data Structures?
+Insertion − Add a new data item in the data structure .
+Deletion − Delete an existing data item from the data structure.
+Traversal − Access each data item exactly once so that it can be processed.
+Searching − Find out the location of the data item if it exists in the data structure
+Sorting − Arranging the data items in some order.
+
 List out the areas in which data structures are applied extensively?
+Compiler Design
+Operating System
+Database Management System
+Statistical analysis package
+Numerical Analysis
+Graphics
+Artificial Intelligence
+Simulation
+
 what is an Array?
+An array is a container object that holds a fixed number of values of a single type.
+
 what is the difference between the Array and ArrayList?
+Array is a fixed length data structure whereas ArrayList is a variable length Collection class.
+We cannot change length of array once created in Java but ArrayList can be changed.
+
 what is LinkedList?
+The LinkedList class is a collection which can contain many objects of the same type, just like the ArrayList.
+
 How is an Array different from Linked List?
+An array is a collection of elements of a similar data type whereas Linked List is an ordered collection of elements
+of the same type in which each element is connected to the next using pointers
+
 what is queue?
+Java Queue is an interface available in java. util package and extends java.
+
 what is stack?
+A Stack is a Last In First Out (LIFO) data structure. It supports two basic operations called push and pop.
+
 what is FIFO and LIFO?
+FIFO is an abbreviation for first in, first out. It is a method for handling data structures where the first
+element is processed first and the newest element is processed last.
+LIFO is an abbreviation for last in, first out. It is a method for handling data structures where the first element
+is processed last and the last element is processed first.
+
 what is the order of complexity?
+O(N), 0(N^2), O(N^3), O(N*log(N))etc.
+
 what is the best case to search an element from an array?
+
 what is the worst case to search an element from an array?
+
 what is tree in data structure?
+A Tree is a non-linear data structure where data objects are organized in terms of hierarchical relationship
+
 what is graph in data structure?
+A graph is a data structure for storing connected data like a network of people on a social media platform.
+
 what is the difference between the HashTable and HashMap?
-What are the major data structures used in the following areas : RDBMS, Network data model and Hierarchical data model.
+HashMap isn't synchronized and it doesn't allow any null key or value
+HashTable is synchronized which allows multiple null value
+
+What are the major data structures used in the following areas :
+RDBMS - Array
+Network data model - Grapy
+Hierarchical data model - Trees
+
 How HashMap works in java?
+It allows to store object and retrieve it when provided with key and value
+
 What is ArrayIndexOutOfBoundsException in java? When it occurs?
+It is a runtime exception. It is thrown to indicate that we are trying to access array element with an illegal index.
+Illegal index is when index is either negative or greater than or equal to the size of the array
+
 What are the different ways of copying an array into another array?
+Manually
+Arrays.copyOf()
+System.arraycopy()
+Object.clone()
+
 What is difference between an array and a linked list?
+An array is a collection of elements of a similar data type.
+Linked List is an ordered collection of elements of the same type in which each element
+is connected to the next using pointers.
+
 What is DFS and BFS?
+Depth-first search (DFS) is a traversal algorithm used for both Tree and Graph data structures.
+The basic approach of the Breadth-First Search (BFS) algorithm is to search for a node into a tree or
+graph structure by exploring neighbors before children.
+
 What is Recursion?
+Recursion is the technique of making a function call itself.
+
 What are linear and non linear data Structures?
+In linear data structure, data elements are sequentially connected and each element is traversable through a single run.
+In non-linear data structure, data elements are hierarchically connected and are present at various levels.
+
 What is Big-(O)-notation?
+Big O Notation is a relative representation of an algorithm's complexity.
+
 Outlined different kind of sorting algorithm with time complexity?
+Selection Sort, bubble sort, insertion sort, heap sort, quick sort, merge sort, bucket sort, radix sort
 
 Draw a table with time complexity in which it will summarize all the data structure feature's advantages and disadvantages.
   a)In terms of Accessing element.
