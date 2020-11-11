@@ -1,6 +1,14 @@
 package design;
 
-public class FortuneEmployee {
+public class FortuneEmployee extends EmployeeInfo implements Employee{
+
+    public FortuneEmployee(int employeeId) {
+        super(employeeId);
+    }
+
+    public FortuneEmployee(String name, int employeeId) {
+        super(name, employeeId);
+    }
 
     /**
      * FortuneEmployee class has a main methods where you will be able to create Object from
@@ -16,4 +24,28 @@ public class FortuneEmployee {
 
     }
 
+    @Override
+    public int employeeId() {
+        return 0;
+    }
+
+    @Override
+    public String employeeName() {
+        return null;
+    }
+
+    @Override
+    public void assignDepartment() {
+
+    }
+
+    @Override
+    public int calculateSalary() {
+        return 0;
+    }
+
+    @Override
+    public void benefitLayout() {
+
+    }
 }
