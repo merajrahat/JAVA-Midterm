@@ -2,6 +2,8 @@ package datastructure;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class UseMap {
 
@@ -28,6 +30,10 @@ public class UseMap {
         HashMap<String, Integer> cityAndZipOfCanada = new HashMap<>();
         cityAndZipOfCanada.put("VA", 7365);
         cityAndZipOfCanada.put("JH", 6789);
+        System.out.println(cityAndZipOfCanada.containsKey("VA"));
+        System.out.println(cityAndZipOfCanada.containsKey("VC"));
+        System.out.println(cityAndZipOfCanada.containsValue(1000));
+        System.out.println(cityAndZipOfCanada.containsValue(7365));
 
         HashMap<String, HashMap<String, Integer>> map = new HashMap();
         map.put("usa", cityAndZipOfUSA);
@@ -38,6 +44,26 @@ public class UseMap {
         list.add(cityAndZipOfCanada);
         list.add(cityAndZipOfUSA);
         System.out.println(list);
+
+        List<String> food = new ArrayList<>();
+        food.add("Pizza");
+        food.add("Burger");
+
+        List<String> drink = new ArrayList<>();
+        drink.add("Coke");
+        drink.add("Ginger Ale");
+
+        List<String> foodAndDrink = new ArrayList<>();
+        foodAndDrink.add("Best Food");
+        foodAndDrink.add("Best Drinks");
+
+        Map<String, List<String>> things = new HashMap<>();
+        things.put("My Favorite Food", food);
+        things.put("My Favorite Drink", drink);
+        System.out.println(things);
+
+
+
     }
 
 }
