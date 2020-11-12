@@ -13,23 +13,23 @@ public class UseArrayList {
          *
          */
 
-        ArrayList<String>Priority = new ArrayList<String>();
-        Priority.add("Messi");
-        Priority.add("Ronaldo");
-        Priority.add("Dybala");
-        Priority.add("Aguero");
+        ArrayList<String>cars = new ArrayList<String>();
+        cars.add("Tesla");
+        cars.add("Lucid Air");
+        cars.add("Rivian");
+        cars.add("Ford");
 
 
-        System.out.println(Priority.get(2));
+        System.out.println(cars.get(2));
 
-        System.out.println(Priority.remove("Aguero"));
+        System.out.println(cars.remove("Ford"));
 
-        System.out.println("retrieve value using for Each loop: ");
-        for (String Players : Priority) {
-            System.out.println(Players);
+        System.out.println("Car for Each loop: ");
+        for (String model : cars) {
+            System.out.println(model);
         }
 
-        Iterator value = Priority.iterator();
+        Iterator value = cars.iterator();
         System.out.println("retrieve value using iterator: ");
         while (value.hasNext()) {
             System.out.println(value.next());
