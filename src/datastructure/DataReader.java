@@ -1,5 +1,8 @@
 package datastructure;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+
 public class DataReader {
 
     public static void main(String[] args) {
@@ -19,7 +22,27 @@ public class DataReader {
          */
 
         String textFile = System.getProperty("user.dir") + "/src/data/self-driving-car.txt";
+        FileReader fileReader = null;
+        BufferedReader bufferedReader = null;
+        String filePath = "src/data/self-driving-car";
+        try {
+            fileReader = new FileReader(filePath);
+            bufferedReader = new BufferedReader(fileReader);
+            String data;
+            while ((data = bufferedReader.readLine()) != null) {
+                System.out.println(data);
+            }
+        } catch (Exception e) {
 
+            System.out.println("Exception not found");
+        } finally {
+            try {
+                fileReader.close();
+                bufferedReader.close();
+            } catch (Exception e) {
+                System.out.println("Closed file");
+            }
+        }
     }
 
 }

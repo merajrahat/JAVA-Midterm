@@ -27,12 +27,11 @@ public class FindLowestDifference {
         */
 
         int[] array1 = {30, 12, 5, 9, 2, 20, 33, 1};
-        System.out.println("Array1 Minimum difference is "+
-                findMinDiff(array1, array1.length));
 
         int[] array2 = {18, 25, 41, 47, 17, 36, 14, 19};
-        System.out.println("Array2 Minimum difference is "+
-                findMinDiff(array2, array2.length));
+
+        System.out.println("Array1 and Array2 Minimum difference is "+
+                findMinDiff(array1, array1.length));
 
 
     }
